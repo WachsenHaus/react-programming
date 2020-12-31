@@ -1,12 +1,11 @@
 import PropTypes from "prop-types";
 import User from "./3-1-no-propTypes";
-import PropTypes from "prop-types";
 
 User.propTypes = {
   male: PropTypes.bool.isRequired,
   age: PropTypes.number,
   type: PropTypes.oneOf(["gold", "silver", "bronze"]),
-  onChangeName: PropTypes.func,
+  onChangeName: PropTypes.func, // (name :string) => void
   onChangeTItle: PropTypes.func.isRequired,
 };
 
